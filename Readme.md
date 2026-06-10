@@ -24,12 +24,27 @@
 | **주요 분석 관점** | **기술 QA (Technical QA)** 측면의 안정성 | **라이브 운영 (LiveOps)** 측면의 알고리즘 밸런스                                                    |
 
 
-* **리그 오브 레전드: 와일드 리프트 (Wild Rift)**
-  > "PC 원작 LoL의 정통 전략성과 정밀한 컨트롤을 그대로 모바일로 이식한 5v5 대전 게임으로, 아군 미니언을 호위하며 적의 방어 타워를 무너뜨리고 최종 기지(넥서스)를 먼저 파괴하는 팀이 승리한다."
-![apbren-mobile-legends.gif](gif%20%EC%82%AC%EC%A7%84/apbren-mobile-legends.gif)
-* **모바일 레전드: 뱅뱅 (MLBB)**
-![lol-league-of-legends.gif](gif%20%EC%82%AC%EC%A7%84/lol-league-of-legends.gif)
-> > "모바일 환경에 100% 최적화된 쉬운 조작법과 10분 내외의 빠른 전투 템포를 자랑하는 5v5 대전 게임으로, 전장 어디서나 아이템을 즉시 구매하며 끊임없는 난전 끝에 적의 중심 기지를 먼저 먼저 철거하면 승리한다."
+<h3>리그 오브 레전드: 와일드 리프트 (Wild Rift)</h3>
+
+<p align="center">
+  <img src="gif%20사진/lol-league-of-legends.gif" width="500">
+</p>
+
+<blockquote>
+PC 원작 LoL의 정통 전략성과 정밀한 컨트롤을 그대로 모바일로 이식한 5v5 대전 게임으로,
+아군 미니언을 호위하며 적의 방어 타워를 무너뜨리고 최종 기지(넥서스)를 먼저 파괴하는 팀이 승리한다.
+</blockquote>
+
+<h3>모바일 레전드: 뱅뱅 (MLBB)</h3>
+
+<p align="center">
+  <img src="gif%20사진/apbren-mobile-legends.gif" width="500">
+</p>
+
+<blockquote>
+모바일 환경에 최적화된 쉬운 조작법과 10분 내외의 빠른 전투 템포를 자랑하는 5v5 대전 게임으로,
+전장 어디서나 아이템을 즉시 구매하며 끊임없는 난전 끝에 적의 중심 기지를 먼저 철거하면 승리한다.
+</blockquote>
 
 ### 1.2 미국 모바일 MOBA 시장의 흥행 지표와 경쟁 구도
 
