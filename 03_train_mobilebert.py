@@ -224,7 +224,7 @@ def main():
     plt.yticks(rotation=0, fontsize=11)
     plt.tight_layout()
 
-    output_matrix_file = '04_model_confusion_matrix.png'
+    output_matrix_file = 'readme 데이터용 사진파일/04_model_confusion_matrix.png'
     plt.savefig(output_matrix_file, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"🎉 모든 작업이 끝났습니다! 혼동 행렬 차트 저장 완료 -> '{output_matrix_file}'")

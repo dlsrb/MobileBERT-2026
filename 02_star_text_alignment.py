@@ -41,7 +41,7 @@ def main():
     plt.xlabel('AI가 예측한 텍스트 감성', fontsize=13)
 
     plt.tight_layout()
-    output_file = '02_star_text_alignment_heatmap_30k.png'
+    output_file = 'readme 데이터용 사진파일/02_star_text_alignment_heatmap_30k.png'
     plt.savefig(output_file, dpi=300)
     print(f"🎉 히트맵 저장 완료 -> '{output_file}'")
 

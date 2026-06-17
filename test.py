@@ -67,7 +67,7 @@ def main():
         ax1.set_xticklabels(game_data['year_month'].unique(), rotation=45)
 
     plt.tight_layout()
-    filename = '01_eda_monthly_distribution.png'
+    filename = 'readme 데이터용 사진파일/01_eda_monthly_distribution.png'
     plt.savefig(filename, dpi=300, bbox_inches='tight')
     print(f"✅ '{filename}' 저장 완료!")
 

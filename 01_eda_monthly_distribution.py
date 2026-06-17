@@ -42,7 +42,7 @@ def main():
             label.set_visible(False)
 
     plt.tight_layout()
-    output_file = '01_eda_monthly_distribution.png'
+    output_file = 'readme 데이터용 사진파일/01_eda_monthly_distribution.png'
     plt.savefig(output_file, dpi=300)
     print(f"🎉 월별 분포 차트 저장 완료 -> '{output_file}'")
 

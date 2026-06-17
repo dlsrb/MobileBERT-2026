@@ -83,11 +83,12 @@ def main():
     df['year_month'] = pd.to_datetime(df[date_col]).dt.strftime('%Y-%m')
 
     print("📊 스파이크 시점 부정(0) 키워드 시각화 생성 중...")
-    plot_spike_keywords(df, 0, '부정', ['Reds_r', 'Blues_r'], '07_keyword_bar_chart_negative_real.png')
+    plot_spike_keywords(df, 0, '부정', ['Reds_r', 'Blues_r'], 'readme 데이터용 사진파일/07_keyword_bar_chart_negative_real.png')
 
     print("📊 스파이크 시점 긍정(1) 키워드 시각화 생성 중...")
     # 🔥 수정: 긍정 라벨 1번으로 완벽 복구
-    plot_spike_keywords(df, 1, '긍정', ['Oranges_r', 'Greens_r'], '07_keyword_bar_chart_positive_real.png')
+    plot_spike_keywords(df, 1, '긍정', ['Oranges_r', 'Greens_r'],
+                        'readme 데이터용 사진파일/07_keyword_bar_chart_positive_real.png')
 
 
 if __name__ == "__main__":

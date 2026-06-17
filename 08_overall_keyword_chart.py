@@ -74,11 +74,12 @@ def main():
     df = pd.read_csv('moba_reviews_predicted_final.csv', encoding='utf-8-sig')
 
     print("📊 전체 기간 부정(0) 키워드 시각화 생성 중...")
-    plot_overall_keywords(df, 0, '부정', ['Reds_r', 'Blues_r'], '08_overall_keyword_negative_real.png')
+    plot_overall_keywords(df, 0, '부정', ['Reds_r', 'Blues_r'], 'readme 데이터용 사진파일/08_overall_keyword_negative_real.png')
 
     print("📊 전체 기간 긍정(1) 키워드 시각화 생성 중...")
     # 🔥 수정: 긍정 라벨을 다시 올바른 1로 복구!
-    plot_overall_keywords(df, 1, '긍정', ['Oranges_r', 'Greens_r'], '08_overall_keyword_positive_real.png')
+    plot_overall_keywords(df, 1, '긍정', ['Oranges_r', 'Greens_r'],
+                          'readme 데이터용 사진파일/08_overall_keyword_positive_real.png')
 
 
 if __name__ == "__main__":

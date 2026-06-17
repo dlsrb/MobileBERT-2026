@@ -57,7 +57,7 @@ def main():
     plt.xticks(rotation=45)
     plt.tight_layout()
 
-    filename = '06_game_comparison_matrix.png'
+    filename = 'readme 데이터용 사진파일/06_game_comparison_matrix.png'
     plt.savefig(filename, dpi=300, bbox_inches='tight')
     print(f"✅ 그래프 생성 및 '{filename}' 저장 완료!")
 
