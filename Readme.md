@@ -148,7 +148,7 @@ Google Play Store 리뷰 데이터 수집 (크롤링 기반 수집 파이프라�
 
 이 사전 가정 수치와 실제 추출된 텍스트의 4진 라벨을 교차 대조(Cross-Tabulation)하여 데이터의 변동 패턴을 분석하였다. 본 분석에서는 데이터의 무결성과 일관성이 보존된 **총 30,067건의 대규모 표본**을 대상으로 별점 데이터와 MobileBERT 모델의 감성 예측 라벨 간의 교차 분석 히트맵을 도출하였다. 이는 유저가 남긴 평점 점수와 피드백 본문 간의 주관적 일관성을 검증하는 동시에, 단순 평점 통계 분석이 지닌 정량적 한계를 관찰하는 지표가 된다.
 
-![02_star_text_alignment_heatmap_30k.png](readme 데이터용 사진파일/02_star_text_alignment_heatmap_30k.png)
+![02_star_text_alignment_heatmap_30k.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/02_star_text_alignment_heatmap_30k.png)![02_star_text_alignment_heatmap_30k.png](readme 데이터용 사진파일/02_star_text_alignment_heatmap_30k.png)
 
 * **일치 패턴의 관찰 (일관성 확보):** 분석 결과, 평점 1점에서 실제 텍스트 감성이 `부정(0)`으로 판별된 건수가 **9,701건**으로 압도적인 최상위를 기록하였으며, 평점 5점에서 `긍정(1)`으로 판별된 건수 역시 **4,718건**으로 매우 높게 나타났다. 이는 대다수의 사용자가 자신이 체감한 주관적 만족도를 평점과 문장에 비교적 일관되게 투영했음을 뜻하며, 데이터셋의 전반적인 신뢰도를 지지하는 통계적 근거가 된다.
 * **불일치 패턴의 도출 (괴리 현상 포착):** 반면, 수치적 평점과 실제 텍스트 문맥이 엇갈리는 '유저 비일관성 패턴'이 유의미하게 포착되었다.
@@ -176,7 +176,7 @@ Google Play Store 리뷰 데이터 수집 (크롤링 기반 수집 파이프라�
 
 평가 결과 **최종 정확도(Accuracy) 77.27%, Macro F1-Score 59.20%, Weighted F1-Score 78.67%**를 확보하였다. 
 
-![04_model_confusion_matrix.png](readme 데이터용 사진파일/04_model_confusion_matrix.png)>
+![04_model_confusion_matrix.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/04_model_confusion_matrix.png)![04_model_confusion_matrix.png](readme 데이터용 사진파일/04_model_confusion_matrix.png)>
 
 검증 세트 내 부정(Negative) 클래스의 비중이 76.5%(303건)를 차지하는 불균형 환경임에도 불구하고, 데이터 개수를 가중 반영한 Weighted F1-Score가 정확도보다 높은 78.67%를 기록하여 모델의 전반적인 분류 안정성을 입증했다. 특히 클래스 가중치가 반영된 학습을 통해 소수 클래스인 긍정(1) 데이터 32건에 대해서도 **81%의 높은 재현율(Recall)**을 기록하며 유의미하게 분류해 내는 결과를 보였다. 또한, `AFK`(잠수), `Feed`(고의패배), `Dark`(다크시스템), `Lag` 등 장르 특유의 인게임 은어와 축약어를 효과적으로 탐지하였다.
 
@@ -201,13 +201,13 @@ Google Play Store 리뷰 데이터 수집 (크롤링 기반 수집 파이프라�
 #### 5.2 League of Legends: Wild Rift 분석 결과 및 해석
 Wild Rift 유저들의 주요 불만 요인은 시스템 기획이나 운영보다는, 클라이언트 내부의 기술적 측면에 집중되는 양상을 보였다. 이를 전체 기간과 위기 시점으로 나누어 분석하였다.
 
-![08_overall_keyword_negative_real.png](readme 데이터용 사진파일/08_overall_keyword_negative_real.png)
+![08_overall_keyword_negative_real.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/08_overall_keyword_negative_real.png)![08_overall_keyword_negative_real.png](readme 데이터용 사진파일/08_overall_keyword_negative_real.png)
 
 **1) 전체 기간 (All-Time) 분석**
 * **주요 키워드:** 수집된 전체 기간의 부정 데이터를 통합 분석한 결과, `fix`(962회), `update`(611회), `connection`(586회)이 상위권을 차지했다.
 * **해석:** 이는 특정 시점의 일시적 오류를 넘어, '네트워크 접속 지연(connection)'이나 업데이트 직후 발생하는 구동 단계에서의 기술적(Tech) 결함이 서비스 전 기간에 걸쳐 유저들을 괴롭혀왔음을 시사한다. Wild Rift의 핵심 개선 과제가 **기술 QA(Quality Assurance) 및 클라이언트 최적화 영역**에 만성적으로 연관되어 있음을 확인할 수 있다.
 
-![07_keyword_bar_chart_negative_real.png](readme 데이터용 사진파일/07_keyword_bar_chart_negative_real.png)
+![07_keyword_bar_chart_negative_real.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/07_keyword_bar_chart_negative_real.png)![07_keyword_bar_chart_negative_real.png](readme 데이터용 사진파일/07_keyword_bar_chart_negative_real.png)
 
 **2) 특정 위기 시점 (Spike: 2026년 3월) 분석**
 * **주요 키워드:** 부정 스파이크 정점인 2026년 3월(부정 비율: 70.8%) 데이터를 분석한 결과, `fix`(123회), `connection`(82회), `stuck`(64회), `match`(61회), `riot`(59회)이 상위권을 차지했다.
@@ -231,8 +231,8 @@ MLBB 유저들의 부정적 반응은 기술적 크래시보다는 매칭 시스
 #### 5.4 긍정 리뷰의 유저 행동 패턴 교차 대조 및 인게임 소구점 분석
 부정 여론의 원인 분석과 대조적으로, 두 게임의 핵심 콘셉트와 유저 만족 포인트(소구점)를 파악하기 위해 정제된 진짜 긍정 라벨(Sentiment=1) 데이터를 바탕으로 분석을 진행하였다.
 
-![08_overall_keyword_positive_real.png](readme 데이터용 사진파일/08_overall_keyword_positive_real.png)
-![07_keyword_bar_chart_positive_real.png](readme 데이터용 사진파일/07_keyword_bar_chart_positive_real.png)
+![08_overall_keyword_positive_real.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/08_overall_keyword_positive_real.png)![08_overall_keyword_positive_real.png](readme 데이터용 사진파일/08_overall_keyword_positive_real.png)
+![07_keyword_bar_chart_positive_real.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/07_keyword_bar_chart_positive_real.png)![07_keyword_bar_chart_positive_real.png](readme 데이터용 사진파일/07_keyword_bar_chart_positive_real.png)
 
 * **모바일 레전드(MLBB) - 경쾌한 플레이와 콘텐츠에 대한 직관적 찬사:**
   MLBB의 전체 기간 및 스파이크 시점(2026-04) 긍정 키워드를 살펴보면 `fun`(전체 3,696회 / 위기 465회), `love`(전체 3,499회 / 위기 475회), `best`(전체 3,484회 / 위기 482회), `nice`(전체 2,447회 / 위기 286회) 등 순수한 게임 플레이의 즐거움과 대중성에 만족하는 감성적 찬사 단어가 압도적인 빈도로 최상위권을 장악했다. 이는 매칭 밸런스 위기 시점(2026-04)에서도 모바일 환경에 최적화된 특유의 경쾌하고 재밌는 한 판의 게임 경험(`fun`, `playing`)과 탄탄한 캐릭터 충성도(`skin`, `moonton`)가 유저 이탈을 방어하는 강력한 완충재 역할을 수행하고 있음을 정량적으로 보여준다.
@@ -246,10 +246,10 @@ MLBB 유저들의 부정적 반응은 기술적 크래시보다는 매칭 시스
 
 시간 흐름에 따른 두 게임의 전체적인 리뷰 볼륨(작성 건수)과 부정 민심 추이를 교차 추적하고, 특정 시점에 여론이 급격히 악화되는 구간을 규명하고자 시계열 분석을 진행하였다.
 
-![01_eda_monthly_distribution.png](readme 데이터용 사진파일/01_eda_monthly_distribution.png)
+![01_eda_monthly_distribution.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/01_eda_monthly_distribution.png)![01_eda_monthly_distribution.png](readme 데이터용 사진파일/01_eda_monthly_distribution.png)
 _그림 6-1. 월별 모바일 MOBA 리뷰 작성 건수 추이 (Wild Rift vs MLBB)_
 
-![06_game_comparison_matrix.png](readme 데이터용 사진파일/06_game_comparison_matrix.png)
+![06_game_comparison_matrix.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/06_game_comparison_matrix.png)![06_game_comparison_matrix.png](readme 데이터용 사진파일/06_game_comparison_matrix.png)
 _그림 6-2. 두 게임 간 월별 부정 여론 비율(Negative Proportion) 추이 및 스파이크 탐지_
 
 #### 6.1 월별 리뷰 볼륨(양적 추이) 분석 결과
