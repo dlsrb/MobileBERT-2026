@@ -253,7 +253,7 @@ MLBB 유저들의 부정적 반응은 기술적 크래시보다는 매칭 시스
 시간 흐름에 따른 두 게임의 전체적인 리뷰 볼륨(작성 건수)과 부정 민심 추이를 교차 추적하고, 특정 시점에 여론이 급격히 악화되는 구간을 규명하고자 시계열 분석을 진행하였다.
 
 ![01_eda_monthly_distribution.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/01_eda_monthly_distribution.png)
-_그림 6-1. 월별 모바일 MOBA 리뷰 작성 건수 추이 (Wild Rift vs MLBB)(02_1에서 봤던 시각화자료와 같다)
+_그림 6-1. 월별 모바일 MOBA 리뷰 작성 건수 추이 (Wild Rift vs MLBB)(그림 2_2에서 봤던 시각화자료와 같다)
 
 ![06_game_comparison_matrix.png](readme%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9A%A9%20%EC%82%AC%EC%A7%84%ED%8C%8C%EC%9D%BC/06_game_comparison_matrix.png)
 _그림 6-2. 두 게임 간 월별 부정 여론 비율(Negative Proportion) 추이 및 스파이크 탐지_
