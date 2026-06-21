@@ -87,7 +87,7 @@ plt.xlabel('직접 분류한 텍스트 감성 라벨', fontsize=13)
 plt.tight_layout()
 
 # [이 부분이 저장 코드입니다] 화면에 띄우기 전에 먼저 저장을 해야 합니다!
-plt.savefig('readme 데이터용 사진파일/수동라벨링_히트맵_결과.png', dpi=300, bbox_inches='tight')
+plt.savefig('수동라벨링_히트맵_결과.png', dpi=300, bbox_inches='tight')
 
 # 화면에 창 띄우기
 plt.show()
